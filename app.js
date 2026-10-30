@@ -1,7 +1,7 @@
     // 1. Data Produk (NAMA FILE GAMBAR HARUS SAMA PERSIS DENGAN DI PANEL VS CODE)
     const products = [
         { id: 1, name: "Smartphone Flagship", price: 7500000, image: "hp.jpg" },
-        { id: 2, name: "Laptop Kerja Intel i7", price: 14500000, image: "laptop.jpg" },
+        { id: 2, name: "Laptop Kerja Intel i7", price: 14500000, image: "Laptop.jpg" },
         { id: 3, name: "Wireless Headphone Bass", price: 1200000, image: "headphone.jpg" },
         { id: 4, name: "Mechanical Keyboard RGB", price: 850000, image: "keyboard.jpg" },
         { id: 5, name: "Mouse Gaming", price: 150000, image: "Mouse.jpg" },
