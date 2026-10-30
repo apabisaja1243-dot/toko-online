@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Online Saya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header & Navigasi -->
+    <header>
+        <h1>GadgetShop</h1>
+        <div style="display: flex; align-items: center; gap: 20px;">
+            <button id="dark-mode-toggle" style="background: none; border: none; font-size: 1.5rem; cursor: pointer;">☀️</button>
+            <div class="cart-icon">
+                🛒 Keranjang (<span id="cart-count">0</span>)
+            </div>
+        </div>
+    </header>
+
+    <!-- Fitur Pencarian -->
+    <div class="search-container" style="padding: 20px 20px 0 20px; max-width: 600px; margin: 0 auto;">
+        <input type="text" id="search-input" placeholder="Cari gadget impian Anda...">
+    </div>
+
+    <!-- Konten Utama -->
+        <!-- Konten Utama -->
+    <main>
+        <!-- Bagian Kiri: Daftar Produk -->
+        <section class="products-section">
+            <h2>Produk Kami</h2>
+            <div class="products-grid" id="products-container">
+                <!-- Produk dimasukkan otomatis lewat JS -->
+            </div>
+        </section>
+
+        <!-- Bagian Kanan: Sidebar Keranjang Belanja -->
+        <aside class="cart-section">
+            <h2>Keranjang Belanja</h2>
+            <ul id="cart-items">    
+                <!-- Item dimasukkan otomatis lewat JS -->
+            </ul>
+            <div class="cart-total">
+                <h3>Total: Rp <span id="cart-total-price">0</span></h3>
+            </div>
+            <button id="checkout-btn">Bayar Sekarang</button>
+            <button id="save-pdf-btn" disabled style="background-color: #bdc3c7; color: white; border: none; width: 100%; padding: 10px; margin-top: 10px; border-radius: 5px; cursor: not-allowed; font-weight: bold;">Simpan Nota (PDF)</button>
+        </aside>
+    </main>
+
+        <!-- [PERBAIKAN] Menggunakan CDN versi stabil yang dijamin terbaca oleh semua jenis browser -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+    <script src="app.js"></script> <!-- Script app.js Anda tetap di bawahnya -->
+</body>
+</html>
+
